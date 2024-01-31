@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Col, Row, Form, Button, Dropdown } from 'react-bootstrap';
+import ProduceModal from "../../components/ProduceModal"
 
 const Market = () => {
   const [filter, setFilter] = useState('demand'); // Filter state for demand/supply
@@ -40,7 +41,8 @@ const Market = () => {
 
   return (
     <div>
-      <div className='mx-4 mt-4'>
+      <div className='mx-4 mt-4'>     
+        <ProduceModal />
         <Form className="mb-3">
           <Row className="align-items-center">
             <Col xs={12} sm={6} md={4}>

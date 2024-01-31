@@ -20,6 +20,12 @@ const Header = () => {
               <Nav.Link>Market</Nav.Link>
             </LinkContainer>
             
+
+            <LinkContainer to={"/generalinformation"}>
+              <Nav.Link href="#features">General Information</Nav.Link>
+            </LinkContainer>
+
+
             <LinkContainer to={"/schedule"}>
               <Nav.Link href="#features">Schedule</Nav.Link>
             </LinkContainer>
