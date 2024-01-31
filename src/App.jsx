@@ -8,6 +8,7 @@ import Market from './pages/market/Market'
 import Profile from './pages/profile/Profile'
 import Schedule from './pages/schedule/Schedule'
 import Generalinformation from './pages/generalinformation/Generalinformation'
+import RowDetails from './pages/generalinformation/RowDetails'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/market" element={<Market />} />
           <Route path="/generalinformation" element={<Generalinformation />} />
+          <Route path="/generalinformation/:id" element={<RowDetails />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/profile" element={<Profile />} />
       </Routes>

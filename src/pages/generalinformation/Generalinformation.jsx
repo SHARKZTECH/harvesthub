@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Table, Button, Modal } from 'react-bootstrap';
 import { FaTrash, FaSave } from 'react-icons/fa';
 import { FcViewDetails } from "react-icons/fc";
+import { Link } from 'react-router-dom';
 
 const Generalinformation = () => {
   const [rows, setRows] = useState([
@@ -77,7 +78,7 @@ const Generalinformation = () => {
               <td>
                 <Button variant="danger" onClick={() => handleDeleteRow(row.id)}><FaTrash /></Button>
                 <Button variant="success" onClick={handleSaveChanges}><FaSave /></Button>
-                <Button variant="success" onClick={() => handleDetails(row)}><FcViewDetails /></Button>
+                <Button variant="success" ><Link to={"/generalinformation/1"}><FcViewDetails /></Link></Button>
               </td>
             </tr>
           ))}
